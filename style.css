@@ -1,0 +1,12 @@
+body{
+  background-color: rgb(28, 43, 38);
+  
+    background-image: url("45.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+}
+.card-body{
+  background-color: rgb(143, 148, 148);
+}
