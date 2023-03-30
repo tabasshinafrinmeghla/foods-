@@ -1,11 +1,5 @@
-function login() {
-  const username = document.getElementById("username").value;
-  const password = document.getElementById("password").value;
+const redirectButton = document.getElementById("redirect-button");
 
-  if (username === "admin" && password === "password") {
-    alert("Login successful!");
-    // Redirect to a new page or do something else
-  } else {
-    alert("Incorrect username or password.");
-  }
-}
+redirectButton.addEventListener("click", function() {
+  window.location.href = "http://127.0.0.1:5500/index.html"; 
+});
