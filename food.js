@@ -1,3 +1,44 @@
+const images =[
+  '1.jpg',
+  '2.jpg',
+  '3.jpg',
+  
+  '5.jpg',
+  '6.jpg',
+  
+  '8.jpg',
+  '9.jpg',
+  '10.jpg',
+  '11.jpg',
+  '13.jpg',
+  '14.jpg',
+  
+  '16.jpg',
+  
+  
+  
+  '20.jpg',
+  '21.jpg',
+  '23.jpg',
+  
+  
+]
+let imgIndex = 0
+const imgElement = document.getElementById('nature');
+setInterval(()=>{
+if (imgIndex === images.length){
+  imgIndex = 0;
+}
+const imgUrl = images[imgIndex];
+console.log(imgUrl,imgIndex);
+imgElement.setAttribute('src', imgUrl);
+imgIndex++;
+},1500
+
+);
+
+
+
 // console.log('food');
 const loadMeals = (searchTest) =>{
   const url =`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchTest}`
